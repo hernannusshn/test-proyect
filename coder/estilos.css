@@ -1,0 +1,347 @@
+table {
+  border: 3px solid;
+ }
+
+th {
+  background-color:#dac9c9;
+  border: 1px solid;
+ }
+
+ tr, td {
+  border: 1px solid;
+ }
+
+.titulo{
+  color: rgb(243, 132, 132);
+  text-align: center;
+  font-family: 'Festive',cursive;
+}
+
+p{
+  color: rgb(255, 253, 253);
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+.boton {
+  border: 1px solid #2e518b; 
+  padding: 10px;
+  background-color: #2e518b; 
+  color: #ffffff; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  font-family: 'Helvetica', sans-serif; 
+  border-radius: 50px; 
+
+  }
+
+  .image-fondo {
+    background-image: url("img/fondo1.jpg");
+    display:block;
+    margin: auto;;
+    background-repeat: no-repeat;
+    background-size: cover;
+     min-height:100%
+     
+}
+
+
+
+.cabecera{
+  color: #fff;
+  height: 800px;
+  line-height: 400px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: #111 10px 10px 10px;
+  margin-top: -100px;
+  letter-spacing: 10px;
+
+  
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  li {
+  background: url('img/trago.jpg') no-repeat left center;
+  height: 30px;
+  padding-left: 30px;
+  }
+
+
+  .center {
+    text-align: center
+    }
+
+
+
+   
+			
+			
+    .grid-container {
+      display: grid;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      background-color: #dac9c9;
+    }
+
+
+    .element {
+      width: 100%;
+      height: 100%;
+      animation: pulse 5s infinite;
+     
+      
+    }
+    
+    @keyframes pulse {
+      0% {
+        background-color: #001F3F;
+      }
+      100% {
+        background-color: #FF4136;
+      }
+    }
+    
+    html,
+    body {
+      height: 100%;
+    }
+
+
+    .color{
+      background: radial-gradient(red, yellow, rgb(30, 144, 255));
+    }
+
+
+    .container{
+      position: relative;
+    }
+.caja{
+  width: 180px;
+  height: 180px;
+  color: #FFF;
+  text-align: center;
+  line-height: 180px;
+  margin: 15px;
+  float: left;
+  font-size: 18px;
+  font-family: Arial;
+}
+.caja1{
+  background-color: #C0392B;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja1:hover{
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+.caja2{
+  background-color: #9B59B6;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja2:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.caja3{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #2980B9;
+}
+.caja3:hover{
+  -webkit-transform: translate(10%);
+  transform: translate(10%);
+}
+.caja4{
+  background-color: #3498DB;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja4:hover{
+  -webkit-transform: skew(10deg);
+  transform: skew(10deg);
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Montserrat'; }
+
+/* header */
+.la {
+  background-image: url("images/la.jpg"); }
+
+.chicago {
+  background-image: url("images/chicago.jpg"); }
+
+.ny {
+  background-image: url("images/ny.jpg"); }
+
+
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem; }
+
+.flexMenu li a {
+  text-decoration: none;
+  color: #4c00ff; }
+
+header h1 {
+  color: #0095ff;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px; }
+
+/*Grilla */
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+ "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+ "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-color: #0091e6; }
+
+.noticiaTres {
+  grid-area: noticiaTres;
+  background-color: #73CAEF; }
+
+.noticiaDos {
+  grid-area: noticiaDos;
+  background-color: #89FFFB; }
+
+.noticiaCuatro {
+  grid-area: noticiaCuatro;
+  background-color: #41E2DD; }
+
+.noticiaCinco {
+  grid-area: noticiaCinco;
+  background-color: #50D8C8; }
+
+.noticiaSeis {
+  grid-area: noticiaSeis;
+  background-color: #53B4F4; }
+
+.noticiaSiete {
+  grid-area: noticiaSiete;
+  background-color: #CDE0E4; }
+
+/* Footer */
+footer {
+  background-color: #e1eef7;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0; }
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center; }
+
+
+
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Montserrat'; }
+
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem; }
+
+.flexMenu li a {
+  text-decoration: none;
+  color: #4c00ff; }
+
+header h1 {
+  color: #0095ff;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px; }
+
+/*Grilla */
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+ "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+ "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-color: #EFF4F7; }
+
+.noticiaTres {
+  grid-area: noticiaTres;
+  background-color: #73CAEF; }
+
+.noticiaDos {
+  grid-area: noticiaDos;
+  background-color: #89FFFB; }
+
+.noticiaCuatro {
+  grid-area: noticiaCuatro;
+  background-color: #41E2DD; }
+
+.noticiaCinco {
+  grid-area: noticiaCinco;
+  background-color: #50D8C8; }
+
+.noticiaSeis {
+  grid-area: noticiaSeis;
+  background-color: #53B4F4; }
+
+.noticiaSiete {
+  grid-area: noticiaSiete;
+  background-color: #CDE0E4; }
+
+/* Footer */
+footer {
+  background-color: #e1eef7;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0; }
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center; }
